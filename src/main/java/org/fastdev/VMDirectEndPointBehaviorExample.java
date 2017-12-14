@@ -17,7 +17,7 @@ public class VMDirectEndPointBehaviorExample {
         secondCamelContext.addRoutes(new VMDirectEndPoint2ndtRouter());
         secondCamelContext.start();
 
-        ProducerTemplate producerTemplate=firstCamelContext.createProducerTemplate();
+        ProducerTemplate producerTemplate = firstCamelContext.createProducerTemplate();
         producerTemplate.sendBody(VMDirectEndPoint1stRouter.VM_DIRECT_START, "Initial Message");
     }
 }
