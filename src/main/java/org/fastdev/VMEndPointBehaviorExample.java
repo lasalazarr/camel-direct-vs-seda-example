@@ -17,7 +17,7 @@ public class VMEndPointBehaviorExample {
         secondCamelContext.addRoutes(new VMEndPoint2ndRouter());
         secondCamelContext.start();
 
-        ProducerTemplate producerTemplate=firstCamelContext.createProducerTemplate();
+        ProducerTemplate producerTemplate = firstCamelContext.createProducerTemplate();
         producerTemplate.sendBody(VMEndPoint1stRouter.VM_START, "Initial Message");
 
         Thread.sleep(2000);

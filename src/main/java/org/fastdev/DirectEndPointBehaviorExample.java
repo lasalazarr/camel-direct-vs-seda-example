@@ -12,7 +12,7 @@ public class DirectEndPointBehaviorExample {
         camelContext.addRoutes(new DirectEndPointRouter());
         camelContext.start();
 
-        ProducerTemplate producerTemplate=camelContext.createProducerTemplate();
+        ProducerTemplate producerTemplate = camelContext.createProducerTemplate();
         producerTemplate.sendBody(DirectEndPointRouter.DIRECT_START, "Initial Message");
     }
 }

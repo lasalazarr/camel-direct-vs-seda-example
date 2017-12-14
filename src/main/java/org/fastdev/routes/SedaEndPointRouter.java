@@ -2,7 +2,7 @@ package org.fastdev.routes;
 
 import org.apache.camel.builder.RouteBuilder;
 
-public class SedaEndPointRouter extends RouteBuilder{
+public class SedaEndPointRouter extends RouteBuilder {
     public static final String SEDA_START = "seda:start";
     public static final String SEDA_END = "seda:End";
 
